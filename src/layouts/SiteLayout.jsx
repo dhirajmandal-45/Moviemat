@@ -1,0 +1,8 @@
+import { Outlet } from 'react-router-dom';
+import Navbar from '../components/site/Navbar';
+import Footer from '../components/site/Footer';
+export default function SiteLayout() {
+  return (
+    <div className="flex min-h-screen flex-col"><Navbar /><main className="flex-1"><Outlet /></main><Footer /></div>
+  );
+}
